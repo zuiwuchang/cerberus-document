@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <!-- https://getbootstrap.com/docs/4.4/components/card/#background-and-color -->
 </head>
 
 <body>
@@ -80,6 +81,7 @@
                     <ul class="list-group">
                         <li class="list-group-item"><a href="#barcode">條碼</a></li>
                         <li class="list-group-item"><a href="#ssh">ssh工具箱</a></li>
+                        <li class="list-group-item"><a href="#ip">ip工具箱</a></li>
                     </ul>
                 </div>
             </div>
@@ -87,10 +89,10 @@
                 <div class="card">
                     <div class="card-header">計劃添加功能</div>
                     <ul class="list-group">
-                        <li class="list-group-item">tcp 數據轉發 (實施中)</li>
-                        <li class="list-group-item">tcp 服務器/客戶端 測試工具</li>
+                        <li class="list-group-item">tcp 服務器/客戶端 測試工具(實施中)</li>
                         <li class="list-group-item">sftp/ftp 客戶端</li>
                         <li class="list-group-item">ssh 客戶端</li>
+                        <li class="list-group-item">支持 英語 德語 日語</li>
                     </ul>
                 </div>
             </div>
@@ -138,6 +140,22 @@
             <div class="card-header">ssh本地端口轉發</div>
             <div class="card-body">
                 使用ssh協議的本地端口轉發，將一個手機端口映射到ssh服務器上指定地址。
+            </div>
+        </div>
+    </div>
+
+    <div class="row" id="ip">
+        <div class="card text-white bg-dark mb-3 col-sm-3">
+            <div class="card-header">tcp轉發</div>
+            <div class="card-body">
+                <ul>
+                    <li>支持 tcp tls-tcp ws wss 協議</li>
+                    <li>將本地的一個tcp數據流 轉發到遠端</li>
+                    <li>比如在本地監聽一個端口 將此端口的數據轉發到 服務器上的 websocket 接口 會很有趣</li>
+                    <li>或者在本地監聽一個 websokcet服務 將收到的數據轉發到服務器上的 tcp 接口 會很有趣</li>
+                    <li>websocket 必須使用 binary frame</li>
+                    <li>websocket服務器支持 端口復用 只要 路由獨立就行 但 ws 和 wss 不可復用同一端口</li>
+                </ul>
             </div>
         </div>
     </div>
