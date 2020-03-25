@@ -76,6 +76,7 @@
                     <div class="card-header">公共功能列表</div>
                     <ul class="list-group">
                         <li class="list-group-item"><a href="#barcode">條碼</a></li>
+                        <li class="list-group-item"><a href="#coding">編碼工具</a></li>
                         <li class="list-group-item"><a href="#ssh">ssh工具箱</a></li>
                         <li class="list-group-item"><a href="#ip">ip工具箱</a></li>
                     </ul>
@@ -95,22 +96,42 @@
         </div>
     </div>
     <div class="row" id="barcode">
-        <div class="card text-white bg-secondary mb-3 col-sm-3">
+        <div class="card text-white bg-secondary mb-3 col-md-3">
             <div class="card-header">創建 qrcode</div>
             <div class="card-body">
                 此功能可以將用戶輸入的一段字符串轉換爲qrcode條碼，並支持保存到手機或分享到社群。
             </div>
         </div>
-        <div class="card text-white bg-info mb-3 col-sm-3">
+        <div class="card text-white bg-info mb-3 col-md-3">
             <div class="card-header">識別 qrcode barcode</div>
             <div class="card-body">
                 識別手機照相機或保存的圖像中的二維條碼。
             </div>
         </div>
     </div>
-
+    <div class="row" id="coding">
+        <div class="card text-white bg-danger mb-3 col-md-3">
+            <div class="card-header">編碼工具</div>
+            <div class="card-body">
+                編碼工具 用於輸入一種格式的數據 自動將其轉換爲其它格式的數據 比如想要輸入 utf8文本 來獲取 它的 hex 值
+                <li>支持 輸入輸出 utf8 文本</li>
+                <li>支持 輸入輸出 hex 形式的 二進制數據</li>
+                <li>支持 輸入輸出 字符數組 形式的 二進制數據 </li>
+                <li>支持 輸入輸出 01 形式的 二進制數據</li>
+            </div>
+        </div>
+        <div class="card text-white bg-dark mb-3 col-md-3">
+            <div class="card-header">數值轉換</div>
+            <div class="card-body">
+                數值轉換 支持 將一個 int64 範圍內的 數據 在 多種進制中轉換
+                <li>支持 輸入輸出 十進制</li>
+                <li>支持 輸入輸出 十六進制</li>
+                <li>支持 輸入輸出 二進制</li>
+            </div>
+        </div>
+    </div>
     <div class="row" id="ssh">
-        <div class="card text-white bg-success mb-3 col-sm-3">
+        <div class="card text-white bg-success mb-3 col-md-3">
             <div class="card-header">密鑰管理</div>
             <div class="card-body">
                 <ul>
@@ -121,7 +142,7 @@
                 </ul>
             </div>
         </div>
-        <div class="card text-white bg-danger mb-3 col-sm-3">
+        <div class="card text-white bg-danger mb-3 col-md-3">
             <div class="card-header">用戶管理</div>
             <div class="card-body">
                 <ul>
@@ -132,7 +153,7 @@
                 </ul>
             </div>
         </div>
-        <div class="card text-white bg-dark mb-3 col-sm-3">
+        <div class="card text-white bg-dark mb-3 col-md-3">
             <div class="card-header">ssh本地端口轉發</div>
             <div class="card-body">
                 使用ssh協議的本地端口轉發，將一個手機端口映射到ssh服務器上指定地址。
@@ -141,7 +162,7 @@
     </div>
 
     <div class="row" id="ip">
-        <div class="card text-white bg-primary mb-3 col-sm-3">
+        <div class="card text-white bg-primary mb-3 col-md-3">
             <div class="card-header">tcp轉發</div>
             <div class="card-body">
                 <ul>
@@ -155,7 +176,7 @@
             </div>
         </div>
 
-        <div class="card text-white bg-secondary mb-3 col-sm-3">
+        <div class="card text-white bg-secondary mb-3 col-md-3">
             <div class="card-header">tcp 客戶端</div>
             <div class="card-body">
                 <ul>
